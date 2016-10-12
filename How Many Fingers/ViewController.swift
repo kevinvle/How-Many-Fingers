@@ -21,11 +21,11 @@ class ViewController: UIViewController {
             
             resultLabel.text = "You're Right!"
         
-        } else {
+        } else  {
             
             resultLabel.text = "Wrong! It was a " + diceRoll
+ 
         }
-        
     }
     
    

@@ -17,7 +17,14 @@ class ViewController: UIViewController {
         
         let diceRoll = String(arc4random_uniform(6))
         
-        print (diceRoll)
+        if diceRoll == userGuessTextField.text {
+            
+            resultLabel.text = "You're Right!"
+        
+        } else {
+            
+            resultLabel.text = "Wrong! It was a " + diceRoll
+        }
         
     }
     
